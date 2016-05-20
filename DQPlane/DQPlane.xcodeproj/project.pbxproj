@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B304CF0B1CE9152E009213D0 /* music.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B304CF0A1CE9152E009213D0 /* music.bundle */; };
+		B304CF0D1CE91568009213D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B304CF0C1CE91568009213D0 /* AudioToolbox.framework */; };
+		B304CF101CE91B08009213D0 /* DQAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B304CF0F1CE91B08009213D0 /* DQAudioPlayer.m */; };
+		B304CF131CE9270B009213D0 /* DQBackAVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B304CF121CE9270B009213D0 /* DQBackAVAudioPlayer.m */; };
+		B304CF151CE92720009213D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B304CF141CE92720009213D0 /* AVFoundation.framework */; };
+		B363E30C1CE8769100DD0D4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E30B1CE8769100DD0D4D /* main.m */; };
+		B363E30F1CE8769100DD0D4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E30E1CE8769100DD0D4D /* AppDelegate.m */; };
+		B363E3121CE8769100DD0D4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E3111CE8769100DD0D4D /* ViewController.m */; };
+		B363E3151CE8769200DD0D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B363E3131CE8769200DD0D4D /* Main.storyboard */; };
+		B363E3181CE8769200DD0D4D /* DQPlane.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B363E3161CE8769200DD0D4D /* DQPlane.xcdatamodeld */; };
+		B363E31A1CE8769200DD0D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B363E3191CE8769200DD0D4D /* Assets.xcassets */; };
+		B363E31D1CE8769200DD0D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B363E31B1CE8769200DD0D4D /* LaunchScreen.storyboard */; };
+		B363E32C1CE87F2C00DD0D4D /* DQWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E32A1CE87F2C00DD0D4D /* DQWelcomeViewController.m */; };
+		B363E32D1CE87F2C00DD0D4D /* DQWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B363E32B1CE87F2C00DD0D4D /* DQWelcomeViewController.xib */; };
+		B363E3311CE8806400DD0D4D /* DQSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E32F1CE8806400DD0D4D /* DQSetViewController.m */; };
+		B363E3321CE8806400DD0D4D /* DQSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B363E3301CE8806400DD0D4D /* DQSetViewController.xib */; };
+		B363E3361CE8807300DD0D4D /* DQGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E3341CE8807200DD0D4D /* DQGameViewController.m */; };
+		B363E3371CE8807300DD0D4D /* DQGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B363E3351CE8807300DD0D4D /* DQGameViewController.xib */; };
+		B363E33B1CE880D300DD0D4D /* DQEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E3391CE880D300DD0D4D /* DQEndViewController.m */; };
+		B363E33C1CE880D300DD0D4D /* DQEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B363E33A1CE880D300DD0D4D /* DQEndViewController.xib */; };
+		B363E33F1CE885D500DD0D4D /* DQPlaneView.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E33E1CE885D500DD0D4D /* DQPlaneView.m */; };
+		B363E3421CE88CF300DD0D4D /* image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B363E3411CE88CF300DD0D4D /* image.bundle */; };
+		B363E3461CE89CBC00DD0D4D /* DQCloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E3451CE89CBC00DD0D4D /* DQCloudView.m */; };
+		B363E3491CE8B9D500DD0D4D /* DQPlaneBulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E3481CE8B9D500DD0D4D /* DQPlaneBulletView.m */; };
+		B363E34C1CE8C4CB00DD0D4D /* DQEnemyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E34B1CE8C4CB00DD0D4D /* DQEnemyView.m */; };
+		B363E34F1CE8CA9600DD0D4D /* DQEnemyBulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = B363E34E1CE8CA9600DD0D4D /* DQEnemyBulletView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B304CF0A1CE9152E009213D0 /* music.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = music.bundle; sourceTree = "<group>"; };
+		B304CF0C1CE91568009213D0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B304CF0E1CE91B08009213D0 /* DQAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAudioPlayer.h; sourceTree = "<group>"; };
+		B304CF0F1CE91B08009213D0 /* DQAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAudioPlayer.m; sourceTree = "<group>"; };
+		B304CF111CE9270B009213D0 /* DQBackAVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQBackAVAudioPlayer.h; sourceTree = "<group>"; };
+		B304CF121CE9270B009213D0 /* DQBackAVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQBackAVAudioPlayer.m; sourceTree = "<group>"; };
+		B304CF141CE92720009213D0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B363E3071CE8769100DD0D4D /* DQPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DQPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B363E30B1CE8769100DD0D4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B363E30D1CE8769100DD0D4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B363E30E1CE8769100DD0D4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B363E3101CE8769100DD0D4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B363E3111CE8769100DD0D4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B363E3141CE8769200DD0D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B363E3171CE8769200DD0D4D /* DQPlane.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DQPlane.xcdatamodel; sourceTree = "<group>"; };
+		B363E3191CE8769200DD0D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B363E31C1CE8769200DD0D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B363E31E1CE8769200DD0D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B363E3291CE87F2C00DD0D4D /* DQWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQWelcomeViewController.h; sourceTree = "<group>"; };
+		B363E32A1CE87F2C00DD0D4D /* DQWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQWelcomeViewController.m; sourceTree = "<group>"; };
+		B363E32B1CE87F2C00DD0D4D /* DQWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DQWelcomeViewController.xib; sourceTree = "<group>"; };
+		B363E32E1CE8806400DD0D4D /* DQSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQSetViewController.h; sourceTree = "<group>"; };
+		B363E32F1CE8806400DD0D4D /* DQSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQSetViewController.m; sourceTree = "<group>"; };
+		B363E3301CE8806400DD0D4D /* DQSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DQSetViewController.xib; sourceTree = "<group>"; };
+		B363E3331CE8807200DD0D4D /* DQGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQGameViewController.h; sourceTree = "<group>"; };
+		B363E3341CE8807200DD0D4D /* DQGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQGameViewController.m; sourceTree = "<group>"; };
+		B363E3351CE8807300DD0D4D /* DQGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DQGameViewController.xib; sourceTree = "<group>"; };
+		B363E3381CE880D300DD0D4D /* DQEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQEndViewController.h; sourceTree = "<group>"; };
+		B363E3391CE880D300DD0D4D /* DQEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQEndViewController.m; sourceTree = "<group>"; };
+		B363E33A1CE880D300DD0D4D /* DQEndViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DQEndViewController.xib; sourceTree = "<group>"; };
+		B363E33D1CE885D500DD0D4D /* DQPlaneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQPlaneView.h; sourceTree = "<group>"; };
+		B363E33E1CE885D500DD0D4D /* DQPlaneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQPlaneView.m; sourceTree = "<group>"; };
+		B363E3411CE88CF300DD0D4D /* image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = image.bundle; sourceTree = "<group>"; };
+		B363E3431CE88DFA00DD0D4D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B363E3441CE89CBC00DD0D4D /* DQCloudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQCloudView.h; sourceTree = "<group>"; };
+		B363E3451CE89CBC00DD0D4D /* DQCloudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQCloudView.m; sourceTree = "<group>"; };
+		B363E3471CE8B9D500DD0D4D /* DQPlaneBulletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQPlaneBulletView.h; sourceTree = "<group>"; };
+		B363E3481CE8B9D500DD0D4D /* DQPlaneBulletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQPlaneBulletView.m; sourceTree = "<group>"; };
+		B363E34A1CE8C4CB00DD0D4D /* DQEnemyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQEnemyView.h; sourceTree = "<group>"; };
+		B363E34B1CE8C4CB00DD0D4D /* DQEnemyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQEnemyView.m; sourceTree = "<group>"; };
+		B363E34D1CE8CA9600DD0D4D /* DQEnemyBulletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQEnemyBulletView.h; sourceTree = "<group>"; };
+		B363E34E1CE8CA9600DD0D4D /* DQEnemyBulletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQEnemyBulletView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B363E3041CE8769100DD0D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B304CF151CE92720009213D0 /* AVFoundation.framework in Frameworks */,
+				B304CF0D1CE91568009213D0 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B363E2FE1CE8769100DD0D4D = {
+			isa = PBXGroup;
+			children = (
+				B304CF141CE92720009213D0 /* AVFoundation.framework */,
+				B304CF0C1CE91568009213D0 /* AudioToolbox.framework */,
+				B363E3091CE8769100DD0D4D /* DQPlane */,
+				B363E3081CE8769100DD0D4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B363E3081CE8769100DD0D4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B363E3071CE8769100DD0D4D /* DQPlane.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B363E3091CE8769100DD0D4D /* DQPlane */ = {
+			isa = PBXGroup;
+			children = (
+				B363E3241CE878D300DD0D4D /* Common */,
+				B363E3251CE878D300DD0D4D /* Controller */,
+				B363E3261CE878D300DD0D4D /* Model */,
+				B363E3271CE878D300DD0D4D /* Singleton */,
+				B363E3281CE878D300DD0D4D /* View */,
+				B363E3401CE88CE000DD0D4D /* Resource */,
+				B363E30D1CE8769100DD0D4D /* AppDelegate.h */,
+				B363E30E1CE8769100DD0D4D /* AppDelegate.m */,
+				B363E3101CE8769100DD0D4D /* ViewController.h */,
+				B363E3111CE8769100DD0D4D /* ViewController.m */,
+				B363E3131CE8769200DD0D4D /* Main.storyboard */,
+				B363E3191CE8769200DD0D4D /* Assets.xcassets */,
+				B363E31B1CE8769200DD0D4D /* LaunchScreen.storyboard */,
+				B363E31E1CE8769200DD0D4D /* Info.plist */,
+				B363E3431CE88DFA00DD0D4D /* PrefixHeader.pch */,
+				B363E3161CE8769200DD0D4D /* DQPlane.xcdatamodeld */,
+				B363E30A1CE8769100DD0D4D /* Supporting Files */,
+			);
+			path = DQPlane;
+			sourceTree = "<group>";
+		};
+		B363E30A1CE8769100DD0D4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B363E30B1CE8769100DD0D4D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B363E3241CE878D300DD0D4D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B304CF0E1CE91B08009213D0 /* DQAudioPlayer.h */,
+				B304CF0F1CE91B08009213D0 /* DQAudioPlayer.m */,
+				B304CF111CE9270B009213D0 /* DQBackAVAudioPlayer.h */,
+				B304CF121CE9270B009213D0 /* DQBackAVAudioPlayer.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B363E3251CE878D300DD0D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B363E3291CE87F2C00DD0D4D /* DQWelcomeViewController.h */,
+				B363E32A1CE87F2C00DD0D4D /* DQWelcomeViewController.m */,
+				B363E32B1CE87F2C00DD0D4D /* DQWelcomeViewController.xib */,
+				B363E32E1CE8806400DD0D4D /* DQSetViewController.h */,
+				B363E32F1CE8806400DD0D4D /* DQSetViewController.m */,
+				B363E3301CE8806400DD0D4D /* DQSetViewController.xib */,
+				B363E3331CE8807200DD0D4D /* DQGameViewController.h */,
+				B363E3341CE8807200DD0D4D /* DQGameViewController.m */,
+				B363E3351CE8807300DD0D4D /* DQGameViewController.xib */,
+				B363E3381CE880D300DD0D4D /* DQEndViewController.h */,
+				B363E3391CE880D300DD0D4D /* DQEndViewController.m */,
+				B363E33A1CE880D300DD0D4D /* DQEndViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B363E3261CE878D300DD0D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B363E3271CE878D300DD0D4D /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		B363E3281CE878D300DD0D4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B363E33D1CE885D500DD0D4D /* DQPlaneView.h */,
+				B363E33E1CE885D500DD0D4D /* DQPlaneView.m */,
+				B363E3441CE89CBC00DD0D4D /* DQCloudView.h */,
+				B363E3451CE89CBC00DD0D4D /* DQCloudView.m */,
+				B363E3471CE8B9D500DD0D4D /* DQPlaneBulletView.h */,
+				B363E3481CE8B9D500DD0D4D /* DQPlaneBulletView.m */,
+				B363E34A1CE8C4CB00DD0D4D /* DQEnemyView.h */,
+				B363E34B1CE8C4CB00DD0D4D /* DQEnemyView.m */,
+				B363E34D1CE8CA9600DD0D4D /* DQEnemyBulletView.h */,
+				B363E34E1CE8CA9600DD0D4D /* DQEnemyBulletView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B363E3401CE88CE000DD0D4D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B363E3411CE88CF300DD0D4D /* image.bundle */,
+				B304CF0A1CE9152E009213D0 /* music.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B363E3061CE8769100DD0D4D /* DQPlane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B363E3211CE8769200DD0D4D /* Build configuration list for PBXNativeTarget "DQPlane" */;
+			buildPhases = (
+				B363E3031CE8769100DD0D4D /* Sources */,
+				B363E3041CE8769100DD0D4D /* Frameworks */,
+				B363E3051CE8769100DD0D4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DQPlane;
+			productName = DQPlane;
+			productReference = B363E3071CE8769100DD0D4D /* DQPlane.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B363E2FF1CE8769100DD0D4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DQ;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = youdingquan;
+				TargetAttributes = {
+					B363E3061CE8769100DD0D4D = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 22N43T8TU4;
+					};
+				};
+			};
+			buildConfigurationList = B363E3021CE8769100DD0D4D /* Build configuration list for PBXProject "DQPlane" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B363E2FE1CE8769100DD0D4D;
+			productRefGroup = B363E3081CE8769100DD0D4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B363E3061CE8769100DD0D4D /* DQPlane */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B363E3051CE8769100DD0D4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B363E3321CE8806400DD0D4D /* DQSetViewController.xib in Resources */,
+				B363E32D1CE87F2C00DD0D4D /* DQWelcomeViewController.xib in Resources */,
+				B363E31D1CE8769200DD0D4D /* LaunchScreen.storyboard in Resources */,
+				B363E31A1CE8769200DD0D4D /* Assets.xcassets in Resources */,
+				B363E3151CE8769200DD0D4D /* Main.storyboard in Resources */,
+				B363E33C1CE880D300DD0D4D /* DQEndViewController.xib in Resources */,
+				B363E3371CE8807300DD0D4D /* DQGameViewController.xib in Resources */,
+				B363E3421CE88CF300DD0D4D /* image.bundle in Resources */,
+				B304CF0B1CE9152E009213D0 /* music.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B363E3031CE8769100DD0D4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B363E3311CE8806400DD0D4D /* DQSetViewController.m in Sources */,
+				B363E3121CE8769100DD0D4D /* ViewController.m in Sources */,
+				B363E3361CE8807300DD0D4D /* DQGameViewController.m in Sources */,
+				B363E33B1CE880D300DD0D4D /* DQEndViewController.m in Sources */,
+				B363E3181CE8769200DD0D4D /* DQPlane.xcdatamodeld in Sources */,
+				B363E34F1CE8CA9600DD0D4D /* DQEnemyBulletView.m in Sources */,
+				B363E3461CE89CBC00DD0D4D /* DQCloudView.m in Sources */,
+				B363E34C1CE8C4CB00DD0D4D /* DQEnemyView.m in Sources */,
+				B363E32C1CE87F2C00DD0D4D /* DQWelcomeViewController.m in Sources */,
+				B363E30F1CE8769100DD0D4D /* AppDelegate.m in Sources */,
+				B304CF101CE91B08009213D0 /* DQAudioPlayer.m in Sources */,
+				B363E3491CE8B9D500DD0D4D /* DQPlaneBulletView.m in Sources */,
+				B363E33F1CE885D500DD0D4D /* DQPlaneView.m in Sources */,
+				B304CF131CE9270B009213D0 /* DQBackAVAudioPlayer.m in Sources */,
+				B363E30C1CE8769100DD0D4D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B363E3131CE8769200DD0D4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B363E3141CE8769200DD0D4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B363E31B1CE8769200DD0D4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B363E31C1CE8769200DD0D4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B363E31F1CE8769200DD0D4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B363E3201CE8769200DD0D4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B363E3221CE8769200DD0D4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ydq19920924@icloud.com (Y7MKB6E9RY)";
+				GCC_PREFIX_HEADER = "${SRCROOT}/DQPlane/PrefixHeader.pch";
+				INFOPLIST_FILE = DQPlane/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ydq.MM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "93a6cb14-8ef1-41a3-82da-fcce0486e1d8";
+			};
+			name = Debug;
+		};
+		B363E3231CE8769200DD0D4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ydq19920924@icloud.com (Y7MKB6E9RY)";
+				GCC_PREFIX_HEADER = "${SRCROOT}/DQPlane/PrefixHeader.pch";
+				INFOPLIST_FILE = DQPlane/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ydq.MM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "93a6cb14-8ef1-41a3-82da-fcce0486e1d8";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B363E3021CE8769100DD0D4D /* Build configuration list for PBXProject "DQPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B363E31F1CE8769200DD0D4D /* Debug */,
+				B363E3201CE8769200DD0D4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B363E3211CE8769200DD0D4D /* Build configuration list for PBXNativeTarget "DQPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B363E3221CE8769200DD0D4D /* Debug */,
+				B363E3231CE8769200DD0D4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B363E3161CE8769200DD0D4D /* DQPlane.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B363E3171CE8769200DD0D4D /* DQPlane.xcdatamodel */,
+			);
+			currentVersion = B363E3171CE8769200DD0D4D /* DQPlane.xcdatamodel */;
+			path = DQPlane.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B363E2FF1CE8769100DD0D4D /* Project object */;
+}
