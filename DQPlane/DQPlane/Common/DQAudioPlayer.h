@@ -11,5 +11,4 @@
 @interface DQAudioPlayer : NSObject
 +(void)playWithName:(NSString*)name;
 +(void)shake;
-+(void)stop;
 @end

@@ -22,6 +22,18 @@
 #pragma mark app delegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //设置初始化
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:MY_AUDIO]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@1 forKey:MY_AUDIO];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:MY_BGAV]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@1 forKey:MY_BGAV];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     DQWelcomeViewController * welcome = [[DQWelcomeViewController alloc] init];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:welcome];

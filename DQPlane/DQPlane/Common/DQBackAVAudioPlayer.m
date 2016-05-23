@@ -25,14 +25,18 @@
 }
 
 -(void)playWithName:(NSString *)name{
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",MUSIC_PATH, name]] error:nil];
-    self.player.numberOfLoops = -1;
-    [self.player prepareToPlay];
-    [self.player play];
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:MY_BGAV] integerValue]) {
+        self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",MUSIC_PATH, name]] error:nil];
+        self.player.numberOfLoops = -1;
+        [self.player prepareToPlay];
+        [self.player play];
+    }
 }
 
 -(void)stop{
-    [self.player stop];
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:MY_BGAV] integerValue]) {
+        [self.player stop];
+    }
 }
 
 @end

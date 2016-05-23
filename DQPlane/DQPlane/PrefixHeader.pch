@@ -14,7 +14,12 @@
 
 #define BACK_COLOR [UIColor colorWithRed:207.0/255.0 green:207.0/255.0 blue:207.0/255.0 alpha:1.0];
 
+//图片和音乐的bundle地址
 #define IMAGE_PATH [[NSBundle mainBundle] pathForResource:@"image" ofType:@"bundle"]
 #define MUSIC_PATH [[NSBundle mainBundle] pathForResource:@"music" ofType:@"bundle"]
+
+//设置
+#define MY_AUDIO @"myaudio"
+#define MY_BGAV @"bgav"
 
 #endif /* PrefixHeader_pch */

@@ -11,21 +11,22 @@
 
 @implementation DQAudioPlayer
 +(void)playWithName:(NSString *)name{
-    SystemSoundID soundID;
-    NSString *soundFile = [NSString stringWithFormat:@"%@/%@",MUSIC_PATH,name];
-    //一个指向文件位置的CFURLRef对象和一个指向要设置的SystemSoundID变量的指针
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
-    AudioServicesPlaySystemSound(soundID);
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:MY_AUDIO] integerValue]) {
+        SystemSoundID soundID;
+        NSString *soundFile = [NSString stringWithFormat:@"%@/%@",MUSIC_PATH,name];
+        //一个指向文件位置的CFURLRef对象和一个指向要设置的SystemSoundID变量的指针
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
+        AudioServicesPlaySystemSound(soundID);
+    }
 }
 
 +(void)shake{
-    SystemSoundID soundID;
-    NSString *soundFile = [NSString stringWithFormat:@"%@/boom.wav",MUSIC_PATH];
-    //一个指向文件位置的CFURLRef对象和一个指向要设置的SystemSoundID变量的指针
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
-    AudioServicesPlayAlertSound(soundID);
-}
-+(void)stop{
-    
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:MY_AUDIO] integerValue]) {
+        SystemSoundID soundID;
+        NSString *soundFile = [NSString stringWithFormat:@"%@/boom.wav",MUSIC_PATH];
+        //一个指向文件位置的CFURLRef对象和一个指向要设置的SystemSoundID变量的指针
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
+        AudioServicesPlayAlertSound(soundID);
+    }
 }
 @end

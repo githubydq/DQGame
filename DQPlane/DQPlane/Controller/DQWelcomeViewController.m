@@ -8,6 +8,7 @@
 
 #import "DQWelcomeViewController.h"
 #import "DQGameViewController.h"
+#import "DQSetViewController.h"
 
 #import "DQAudioPlayer.h"
 #import "DQBackAVAudioPlayer.h"
@@ -136,6 +137,10 @@
 }
 
 - (IBAction)set:(UIButton *)sender {
+    DQSetViewController * set = [[DQSetViewController alloc] init];
+    set.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] init];
+    [set.navigationItem.backBarButtonItem setTitle:@"饭"];
+    [self.navigationController pushViewController:set animated:NO];
 }
 
 @end
